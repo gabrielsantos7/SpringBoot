@@ -1,0 +1,32 @@
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+Lembre-se de que, sem a linha "target/" no .gitignore, a pasta "target" será incluída no próximo commit. Se você ainda não tem certeza se deseja incluir a pasta "target" no repositório, pode ser uma boa ideia
+
+
+
