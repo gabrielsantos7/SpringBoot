@@ -12,7 +12,7 @@ O Spring Boot tem uma estruturação simples que permite aos desenvolvedores cri
 
 ## 📁 Estruturação do Projeto
 
-> Para todos os projetos em SpringBoot, é necessário que haja uma série de arquivos e pastas criados previamente. Como eles são criados de forma padrão e usados em todos os projetos, não há a necessidade de criar tudo do zero toda vez que começarmos a trabalhar no código. A estruturação padrão do Spring Boot é baseada em algumas pastas e arquivos importantes:
+ Para todos os projetos em SpringBoot, é necessário que haja uma série de arquivos e pastas criados previamente. Como eles são criados de forma padrão e usados em todos os projetos, não há a necessidade de criar tudo do zero toda vez que começarmos a trabalhar no código. A estruturação padrão do Spring Boot é baseada em algumas pastas e arquivos importantes:
 
 ### Pastas src:
 
@@ -24,7 +24,7 @@ O Spring Boot tem uma estruturação simples que permite aos desenvolvedores cri
 
 ### Pastas de organização dos arquivos do projeto
 
-> A pasta `src/main/java` é a pasta padrão onde são armazenados os arquivos-fonte Java da aplicação. É dentro dela que iremos trabalhar o código-fonte dos projetos. Dentro dela, é comum criar um pacote (package) raiz com o nome da aplicação. No nosso caso, a aplicação se chama "springboot2-essentials". Então daremos a este pacote raiz o nome "springboot2". Dentro dessa pasta, é comum criar três subpacotes para cada camada da aplicação, a fim de organizar diferentes tipos de classes do projeto.
+ A pasta `src/main/java` é a pasta padrão onde são armazenados os arquivos-fonte Java da aplicação. É dentro dela que iremos trabalhar o código-fonte dos projetos. Dentro dela, é comum criar um pacote (package) raiz com o nome da aplicação. No nosso caso, a aplicação se chama "springboot2-essentials". Então daremos a este pacote raiz o nome "springboot2". Dentro dessa pasta, é comum criar três subpacotes para cada camada da aplicação, a fim de organizar diferentes tipos de classes do projeto.
 
 * O pacote `controller` contém as classes responsáveis por receber as requisições HTTP e fornecer as respostas apropriadas. Essas classes geralmente contêm métodos anotados com as anotações @RequestMapping, @GetMapping, @PostMapping, entre outras, que indicam os endpoints HTTP e como processá-los.
 * O pacote `domain` contém as classes que representam as entidades de negócio do sistema. Essas classes geralmente correspondem às tabelas de banco de dados ou aos objetos de negócio manipulados pelo sistema. Elas contêm os atributos e métodos necessários para representar essas entidades e implementam a lógica de negócio necessária para manipulá-las.
@@ -63,7 +63,7 @@ O Spring Boot tem uma estruturação simples que permite aos desenvolvedores cri
 
 ## 📌 Anotações de classes e métodos
 
-> As anotações (ou annotations) em um projeto Spring são usadas para fornecer metadados adicionais sobre as classes e métodos da aplicação. Elas são linhas iniciadas com o símbolo "@" que são colocadas acima das definições de classes e métodos, e são usadas pelo Spring Framework para entender como as classes e métodos devem ser tratados dentro da aplicação. Assim, é possível entender o papel de uma classe ou método na aplicação simplesmente olhando para as anotações acima deles.
+ As anotações (ou annotations) em um projeto Spring são usadas para fornecer metadados adicionais sobre as classes e métodos da aplicação. Elas são linhas iniciadas com o símbolo "@" que são colocadas acima das definições de classes e métodos, e são usadas pelo Spring Framework para entender como as classes e métodos devem ser tratados dentro da aplicação. Assim, é possível entender o papel de uma classe ou método na aplicação simplesmente olhando para as anotações acima deles.
 
 ---
 
@@ -91,9 +91,9 @@ O Spring Boot tem uma estruturação simples que permite aos desenvolvedores cri
 
 ## 🔗 Outros complementos e funcionalidades
 
-> O Spring Boot pode ser usado em conjunto com outras ferramentas do ecossistema Spring, como o Spring MVC para criar aplicativos web. Além disso, o Spring Boot vem com um servidor embutido (TomCat), o que significa que você não precisa configurar um servidor web externo para executar seu aplicativo. Isso facilita a execução e o teste do seu aplicativo em seu próprio ambiente de desenvolvimento.
+ O Spring Boot pode ser usado em conjunto com outras ferramentas do ecossistema Spring, como o Spring MVC para criar aplicativos web. Além disso, o Spring Boot vem com um servidor embutido (TomCat), o que significa que você não precisa configurar um servidor web externo para executar seu aplicativo. Isso facilita a execução e o teste do seu aplicativo em seu próprio ambiente de desenvolvimento.
 
-> O TomCat é incluído como uma dependência do projeto. Ele é empacotado junto com o código do projeto em um arquivo JAR executável. Quando o projeto é executado, o servidor Tomcat é inicializado automaticamente e disponibiliza as aplicações web contidas no projeto. Por padrão, esse servidor atua na porta 8080, mas você pode configurar uma porta diferente no arquivo "application.properties" ou "application.yml" do projeto.
+ O TomCat é incluído como uma dependência do projeto. Ele é empacotado junto com o código do projeto em um arquivo JAR executável. Quando o projeto é executado, o servidor Tomcat é inicializado automaticamente e disponibiliza as aplicações web contidas no projeto. Por padrão, esse servidor atua na porta 8080, mas você pode configurar uma porta diferente no arquivo "application.properties" ou "application.yml" do projeto.
 
 ---
 
