@@ -8,7 +8,6 @@ O Spring Boot é um framework para desenvolvimento de aplicativos em Java que vi
 
 O Spring Boot tem uma estruturação simples que permite aos desenvolvedores criar rapidamente aplicativos web em Java com poucas configurações. O objetivo principal é tornar o desenvolvimento de aplicativos Java mais fácil e rápido, oferecendo um conjunto de convenções e padrões que podem ser seguidos para criar aplicativos web prontos para produção.
 
----
 
 ## 📁 Estruturação do Projeto
 
@@ -59,7 +58,6 @@ O Spring Boot tem uma estruturação simples que permite aos desenvolvedores cri
 - `application.properties:` Este arquivo contém as configurações do seu aplicativo, como as configurações do banco de dados, portas do servidor, etc.
 - `mvnw` e `mvnw.cmd:` Os dois arquivos são a mesma coisa, a diferença é que o primeiro é um executável de sistemas unix e o segundo, do Windows. São scripts do wrapper do maven que permitem que o Maven seja executado sem a necessidade de instalação global do Maven no sistema operacional.
 
----
 
 ## 📌 Anotações de classes e métodos
 
@@ -87,7 +85,6 @@ O Spring Boot tem uma estruturação simples que permite aos desenvolvedores cri
 * `@RequestParam:` indica que um parâmetro de método deve ser vinculado a um parâmetro de consulta de solicitação HTTP.
 * `@PathVariable:` indica que um parâmetro de método deve ser vinculado a uma variável de caminho de solicitação HTTP.
 
----
 
 ## 🔗 Outros complementos e funcionalidades
 
@@ -95,13 +92,11 @@ O Spring Boot tem uma estruturação simples que permite aos desenvolvedores cri
 
  O TomCat é incluído como uma dependência do projeto. Ele é empacotado junto com o código do projeto em um arquivo JAR executável. Quando o projeto é executado, o servidor Tomcat é inicializado automaticamente e disponibiliza as aplicações web contidas no projeto. Por padrão, esse servidor atua na porta 8080, mas você pode configurar uma porta diferente no arquivo "application.properties" ou "application.yml" do projeto.
 
----
 
 ## 💻 Criando o projeto
 
 Para criar projetos em Spring Boot, você pode usar o Spring Initializr, um site que permite que você gere automaticamente um projeto Spring Boot com as dependências e configurações necessárias. Você pode acessar o site em [https://start.spring.io/](https://start.spring.io/). Lá, você pode definir as opções de configuração do projeto, como a versão do Spring Boot, as dependências, etc.
 
----
 
 ## 📕 Descrição deste projeto
 
