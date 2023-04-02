@@ -8,7 +8,6 @@ O Spring Boot é um framework para desenvolvimento de aplicativos em Java que vi
 
 O Spring Boot tem uma estruturação simples que permite aos desenvolvedores criar rapidamente aplicativos web em Java com poucas configurações. O objetivo principal é tornar o desenvolvimento de aplicativos Java mais fácil e rápido, oferecendo um conjunto de convenções e padrões que podem ser seguidos para criar aplicativos web prontos para produção.
 
-
 ## 📁 Estruturação do Projeto
 
  Para todos os projetos em SpringBoot, é necessário que haja uma série de arquivos e pastas criados previamente. Como eles são criados de forma padrão e usados em todos os projetos, não há a necessidade de criar tudo do zero toda vez que começarmos a trabalhar no código. A estruturação padrão do Spring Boot é baseada em algumas pastas e arquivos importantes:
@@ -58,7 +57,6 @@ O Spring Boot tem uma estruturação simples que permite aos desenvolvedores cri
 - `application.properties:` Este arquivo contém as configurações do seu aplicativo, como as configurações do banco de dados, portas do servidor, etc.
 - `mvnw` e `mvnw.cmd:` Os dois arquivos são a mesma coisa, a diferença é que o primeiro é um executável de sistemas unix e o segundo, do Windows. São scripts do wrapper do maven que permitem que o Maven seja executado sem a necessidade de instalação global do Maven no sistema operacional.
 
-
 ## 📌 Anotações de classes e métodos
 
  As anotações (ou annotations) em um projeto Spring são usadas para fornecer metadados adicionais sobre as classes e métodos da aplicação. Elas são linhas iniciadas com o símbolo "@" que são colocadas acima das definições de classes e métodos, e são usadas pelo Spring Framework para entender como as classes e métodos devem ser tratados dentro da aplicação. Assim, é possível entender o papel de uma classe ou método na aplicação simplesmente olhando para as anotações acima deles.
@@ -70,7 +68,9 @@ O Spring Boot tem uma estruturação simples que permite aos desenvolvedores cri
 * `@Component:` indica que a classe é um componente gerenciado pelo Spring (ou seja, que pode ser injetado em outras classes).
 * `@Service:` indica que a classe é um serviço da aplicação, geralmente utilizado para processar regras de negócio.
 * `@Controller:` indica que a classe é um controlador da aplicação web, responsável por gerenciar requisições HTTP e retornar respostas.
+* `@ResponseBody:` indica que o valor de retorno de um método deve ser colocado diretamente no corpo da resposta HTTP, geralmente em formato JSON ou XML.
 * `@Repository:` indica que a classe é um repositório de dados, normalmente utilizado para realizar operações de persistência em bancos de dados.
+* `@RestController:` indica que uma classe é responsável por controlar requisições HTTP REST e gerar respostas correspondentes, combinando as funcionalidades das anotações @Controller e @ResponseBody para manipular solicitações da web e retornar dados no corpo da resposta HTTP.
 
 ---
 
@@ -85,18 +85,15 @@ O Spring Boot tem uma estruturação simples que permite aos desenvolvedores cri
 * `@RequestParam:` indica que um parâmetro de método deve ser vinculado a um parâmetro de consulta de solicitação HTTP.
 * `@PathVariable:` indica que um parâmetro de método deve ser vinculado a uma variável de caminho de solicitação HTTP.
 
-
 ## 🔗 Outros complementos e funcionalidades
 
  O Spring Boot pode ser usado em conjunto com outras ferramentas do ecossistema Spring, como o Spring MVC para criar aplicativos web. Além disso, o Spring Boot vem com um servidor embutido (TomCat), o que significa que você não precisa configurar um servidor web externo para executar seu aplicativo. Isso facilita a execução e o teste do seu aplicativo em seu próprio ambiente de desenvolvimento.
 
  O TomCat é incluído como uma dependência do projeto. Ele é empacotado junto com o código do projeto em um arquivo JAR executável. Quando o projeto é executado, o servidor Tomcat é inicializado automaticamente e disponibiliza as aplicações web contidas no projeto. Por padrão, esse servidor atua na porta 8080, mas você pode configurar uma porta diferente no arquivo "application.properties" ou "application.yml" do projeto.
 
-
 ## 💻 Criando o projeto
 
 Para criar projetos em Spring Boot, você pode usar o Spring Initializr, um site que permite que você gere automaticamente um projeto Spring Boot com as dependências e configurações necessárias. Você pode acessar o site em [https://start.spring.io/](https://start.spring.io/). Lá, você pode definir as opções de configuração do projeto, como a versão do Spring Boot, as dependências, etc.
-
 
 ## 📕 Descrição deste projeto
 
