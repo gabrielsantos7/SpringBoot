@@ -1,4 +1,4 @@
-# springboot2-essentials
+# springboot2-essentials-video06
 
 ![1680216781191](image/README/1680216781191.png)
 
